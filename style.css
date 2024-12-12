@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+table {
+  border: 1px solid #010101;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table tr th {
+  border: 1px solid #010101;
+  padding: 10px 24px;
+  color: #f00;
+}
+
+table td {
+  border: 1px solid #010101;
+  padding-block: 10px;
+  padding-inline: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: purple;
+}
+
+.button {
+  position: absolute;
+  left: 48%;
+  margin-block: 5px;
+}
+
+.btn {
+  padding-block: 12px;
+  padding-inline-start: 12px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: purple;
+  color: aliceblue;
+  line-height: 0.6rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: aqua;
+}

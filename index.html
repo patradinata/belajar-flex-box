@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body id="ubahWarnaBody">
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Nama</th>
+          <th>Jenis Kelamin</th>
+          <th>Alamat</th>
+          <th>Usia</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Angga</td>
+          <td>Laki Laki</td>
+          <td>Bumi agung</td>
+          <td>25 Tahun</td>
+          <td>Belum menikah</td>
+        </tr>
+        <tr>
+          <td>Firdaus</td>
+          <td>Laki-laki</td>
+          <td>bumi agung</td>
+          <td>24 Tahun</td>
+          <td>belum menikah</td>
+        </tr>
+        <tr>
+          <td>Rendi irawan</td>
+          <td>Laki Laki</td>
+          <td>sesanggai</td>
+          <td>21 tahun</td>
+          <td>belum menikah</td>
+        </tr>
+        <tr>
+          <td>Asep yunespi</td>
+          <td>Laki-laki</td>
+          <td>sesanggai</td>
+          <td>30 tahun</td>
+          <td>Belum menikah</td>
+        </tr>
+        <tr>
+          <td>Ginanjar</td>
+          <td>Laki laki</td>
+          <td>Tardana</td>
+          <td>30 tahun</td>
+          <td>belum menikah</td>
+        </tr>
+        <tr>
+          <td>Reynaldi</td>
+          <td>Laki-lai</td>
+          <td>Tardana</td>
+          <td>26 tahun</td>
+          <td>belum menikah</td>
+        </tr>
+        <tr>
+          <td>Maman suryaman</td>
+          <td>Laki Laki</td>
+          <td>Tardana</td>
+          <td>29 tahun</td>
+          <td>belum menikah</td>
+        </tr>
+      </table>
+      <br />
+
+      <aside class="button">
+        <button class="btn">Klik Aku Bang</button>
+      </aside>
+    </div>
+    <!-- <input type="password" name="password" id="password" /> -->
+
+    <script>
+      // const password = document.querySelector('input[type="password"]');
+      // password.addEventListener("focus", (event) => {
+      //   console.log("haloo sayang ku");
+      // });
+      // password.addEventListener("blur", (event) => {
+      //   event.target.style.backgroundColor = "";
+      // });
+      // const text = `sekarang adalah tahun ${newFullYear}`;
+      // console.log(text);
+
+      const number = 5 > 2;
+
+      const completed = true;
+      const templated = false;
+      console.log(completed, templated);
+
+      const pesan = null;
+      console.log(pesan);
+
+      function convertCelciusToFahrenheit(temperature = 100) {
+        const temperatureInFahrenheit = (9 / 5) * temperature + 32;
+
+        console.log("Hasil Konversi", temperatureInFahrenheit);
+      }
+      convertCelciusToFahrenheit();
+
+      // outputny adalah bangun tidur tidur lagi
+      const Berangkatmagang = false;
+      console.log("Bangun tidur");
+      if (Berangkatmagang) {
+        console.log("Berangkatlah masa enggak");
+      } else {
+        console.log("tidur lagi");
+      }
+
+      const grade = 70;
+      if (grade >= 95) {
+        console.log("Grade Kamu A");
+      } else if (grade >= 75) {
+        console.log("Grade kamu B");
+      } else if (grade >= 65) {
+        console.log("Grade kamu C");
+      } else if (grade >= 60) {
+        console.log("Grade kamu D");
+      } else {
+        console.log("maaf anda tidak lulus");
+      }
+
+      const celcius = 90;
+      const fahrenheit = 9 / 5 + 70;
+
+      console.log("hasil konversi:", fahrenheit);
+
+      // const body = document.querySelector(".ubahWarnaBody");
+      // window.onresize = () => {
+      //   body.style.backgroundColor = "gold";
+      // };
+
+      // const body = document.querySelector("#ubahWarnaBody");
+      // const button = document.querySelector(".btn");
+      // button.onresize = () => {
+      //   body.style.backgroundColor = "gold";
+      //   alert("body telah diubah");
+      // };
+
+      const convertCelciusInArrowFunction = (temperature) => {
+        const result = (9 / 5) * temperature + 2;
+        return result;
+      };
+
+      temperatureInFahrenheit = convertCelciusInArrowFunction(90);
+      console.log("Hasil Konversi", temperatureInFahrenheit);
+
+      const cm = "123";
+      const km = null;
+
+      const intBoleeanCm = Boolean(cm);
+      const intBoleeanKm = Boolean(km);
+
+      console.log(intBoleeanCm);
+      console.log(intBoleeanKm);
+
+      const aku = "dicoding";
+      const umur = 10;
+
+      const tiga = "2";
+      console.log(tiga);
+
+      const materials = ["Hydrogen", "Helium", "Lithium", "Beryllium"];
+
+      console.log(materials.map((material) => material.length));
+
+      const literals = (name, alamat) => {
+        return `halo guys perkenalkan nama saya ${name} alamat saya di ${alamat} `;
+      };
+
+      const patra = literals("patra", "Lampung");
+      console.log(patra);
+
+      // belajar async
+      // function resolveAfter2Second() {
+      //   return new Promise((resolve) => {
+      //     setTimeout(() => {
+      //       resolve("resolved");
+      //     }, 4000);
+      //   });
+      // }
+
+      // async function asyncCall() {
+      //   console.log("calling");
+      //   const result = await resolveAfter2Second();
+      //   console.log(result);
+      //   // outputnya: resolved
+      // }
+
+      // asyncCall();
+
+      const p = new Promise((res, rej) => {
+        res(1);
+      });
+
+      async function asyncReturn() {
+        return p;
+      }
+
+      function basicReturn() {
+        return Promise.resolve(p);
+      }
+
+      console.log(p === basicReturn()); // true
+      console.log(p === asyncReturn); // false
+
+      let i = 0;
+      while (i < 6) {
+        if (i === 3) {
+          break;
+        }
+        i = i + 1;
+      }
+      console.log(i);
+
+      // import
+      // import defaultExport from "module-name";
+      // import * as name from "module-name";
+      // import { export1 } from "module-name";
+      // import { export1 as alias1 } from "module-name";
+      // import { default as alias } from "module-name";
+
+      function testNumber(a) {
+        let result;
+        if (a > 0) {
+          result = "positive";
+        } else {
+          result = "Not positive";
+        }
+        return result;
+      }
+      console.log(testNumber(-5));
+
+      function usia(usiaKamu) {
+        let result;
+        if (usiaKamu >= 27) {
+          result = "kamu udah menikah";
+        } else {
+          result = "masih kuliah";
+        }
+        return result;
+      }
+      console.log(usia(21));
+
+      // Rest Parameters!
+      function number2(...theArgs) {
+        let total = 0;
+        for (const arg of theArgs) {
+          total += arg;
+        }
+        return total;
+      }
+      console.log(number2(1, 2, 3));
+      console.log(number2(1, 2, 3, 4, 4, 6));
+    </script>
+  </body>
+</html>
